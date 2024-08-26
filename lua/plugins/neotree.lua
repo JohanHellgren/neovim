@@ -10,7 +10,7 @@ return
   config = function()
     local wk = require("which-key")
     wk.add({
-      { "<leader>e", "<cmd>Neotree filesystem reveal left<cr>", desc = "Toggle Neotree", mode = "n" }
+      { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Toggle Neotree", mode = "n" }
     })
   end
 }
