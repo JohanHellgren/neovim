@@ -11,6 +11,7 @@ return {
       -- See Configuration section for rest
     },
     config = function()
+    require("CopilotChat").setup()
       local wk = require("which-key")
       wk.add({
         { "<leader>a",  group = "AI" },

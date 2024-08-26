@@ -18,5 +18,11 @@ return {
     { "<leader>g",  desc = "Git" },
     { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
   },
-
+  config = function()
+    local wk = require("which-key")
+    wk.add({
+      { "<leader>g",  desc = "Git" },
+      { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+    })
+  end
 }
