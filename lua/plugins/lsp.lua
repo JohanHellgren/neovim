@@ -26,7 +26,6 @@ return {
         { "<leader>cD", vim.lsp.buf.declaration, desc = "Go to declaration" },
         { "<leader>cr", vim.lsp.buf.references,  desc = "Find references" },
         { "<leader>ca", vim.lsp.buf.code_action, desc = "Code action" },
-        { "h",          "Hover" },
         { "<leader>cf", vim.lsp.buf.format,      desc = "Format" },
       })
     end
