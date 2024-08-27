@@ -27,6 +27,12 @@ return {
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
+      lspconfig.tailwindcss.setup({
+        capabilities = capabilities
+      })
+      lspconfig.cssls.setup({
+        capabilities = capabilities
+      })
 			local wk = require("which-key")
 			wk.add({
 				{ "<leader>c", group = "code" },
@@ -35,7 +41,7 @@ return {
 				{ "<leader>cr", vim.lsp.buf.references, desc = "Find references" },
 				{ "<leader>ca", vim.lsp.buf.code_action, desc = "Code action" },
 				{ "<leader>cf", vim.lsp.buf.format, desc = "Format" },
-			})
+		})
 		end,
 	},
 }
