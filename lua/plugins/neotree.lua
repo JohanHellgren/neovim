@@ -1,5 +1,4 @@
-return
-{
+return {
   "nvim-neo-tree/neo-tree.nvim",
   branch = "v3.x",
   dependencies = {
@@ -10,7 +9,7 @@ return
   config = function()
     local wk = require("which-key")
     wk.add({
-      { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Neotree", mode = "n" }
+      { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Neotree", mode = "n" },
     })
-  end
+  end,
 }
