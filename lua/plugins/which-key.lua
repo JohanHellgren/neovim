@@ -15,6 +15,8 @@ return
       end,
       desc = "Buffer Local Keymaps (which-key)",
     },
+      {"<Tab>", "<cmd>bnext<cr>", mode = "n"},
+      {"<S-Tab>", "<cmd>bprevious<cr>", mode = "n"},
   },
   setup = function()
   end
