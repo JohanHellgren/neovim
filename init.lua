@@ -49,3 +49,4 @@ require("lspconfig").vuels.setup({})
 require("lspconfig").cssls.setup({})
 require("lspconfig").rust_analyzer.setup({})
 require("lspconfig").tsserver.setup({})
+require'lspconfig'.sourcekit.setup{}

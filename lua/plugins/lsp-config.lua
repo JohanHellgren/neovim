@@ -46,6 +46,9 @@ return {
 			lspconfig.vuels.setup({
 				capabilities = capabilities,
 			})
+      lspconfig.sourcekit.setup({
+        capabilities = capabilities,
+      })
 			local wk = require("which-key")
 			wk.add({
 				{ "<leader>c", group = "code" },
