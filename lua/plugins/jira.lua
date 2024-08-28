@@ -13,7 +13,7 @@ return {
 	config = function()
 		local wk = require("which-key")
 		wk.add({
-			{ "<leader>j>", desc = "Jira" },
+			{ "<leader>j>", group = "Jira", desc = "Jira" },
 			{ "<leader>jv", "<cmd>Jira issue view<cr>", desc = "View Jira issue" },
 			{ "<leader>jt", "<cmd>Jira issue create<cr>", desc = "Create Jira Issue" },
 		})
