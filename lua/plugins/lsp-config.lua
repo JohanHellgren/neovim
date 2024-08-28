@@ -43,9 +43,9 @@ return {
 			lspconfig.omnisharp.setup({
 				capabilities = capabilities,
 			})
-      lspconfig.vuels.setup({
-        capabilities = capabilities,
-      })
+			lspconfig.vuels.setup({
+				capabilities = capabilities,
+			})
 			local wk = require("which-key")
 			wk.add({
 				{ "<leader>c", group = "code" },
