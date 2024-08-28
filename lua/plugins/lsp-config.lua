@@ -18,6 +18,10 @@ return {
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities
 			local lspconfig = require("lspconfig")
+
+			require("lspconfig").cssls.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
@@ -27,11 +31,20 @@ return {
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
-      lspconfig.tailwindcss.setup({
-        capabilities = capabilities
-      })
-      lspconfig.cssls.setup({
-        capabilities = capabilities
+			lspconfig.tailwindcss.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.cssls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.csharp_ls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.omnisharp.setup({
+				capabilities = capabilities,
+			})
+      lspconfig.vuels.setup({
+        capabilities = capabilities,
       })
 			local wk = require("which-key")
 			wk.add({
@@ -41,7 +54,7 @@ return {
 				{ "<leader>cr", vim.lsp.buf.references, desc = "Find references" },
 				{ "<leader>ca", vim.lsp.buf.code_action, desc = "Code action" },
 				{ "<leader>cf", vim.lsp.buf.format, desc = "Format" },
-		})
+			})
 		end,
 	},
 }
