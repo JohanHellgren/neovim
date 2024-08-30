@@ -3,7 +3,7 @@ return {
   opts = {}, -- for default options, refer to the configuration section for custom setup.
   cmd = "Trouble",
   keys = {
-    {"<leader>x", group = "Trouble"},
+    { "<leader>x",  group = "Trouble" },
     {
       "<leader>xx",
       "<cmd>Trouble diagnostics toggle<cr>",
@@ -34,5 +34,7 @@ return {
       "<cmd>Trouble qflist toggle<cr>",
       desc = "Quickfix List (Trouble)",
     },
+    { "<leader>xn", "<esc><cmd>lua vim.diagnostic.goto_prev()<cr>", desc = "Next Diagnostic" },
+    { "<leader>xp", "<esc><cmd>lua vim.diagnostic.goto_next()<cr>", desc = "Previous Diagnostic" },
   },
 }
