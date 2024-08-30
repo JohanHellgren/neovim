@@ -34,7 +34,7 @@ return {
       "<cmd>Trouble qflist toggle<cr>",
       desc = "Quickfix List (Trouble)",
     },
-    { "<leader>xn", "<esc><cmd>lua vim.diagnostic.goto_prev()<cr>", desc = "Next Diagnostic" },
-    { "<leader>xp", "<esc><cmd>lua vim.diagnostic.goto_next()<cr>", desc = "Previous Diagnostic" },
+    { "<leader>cn", "<esc><cmd>lua vim.diagnostic.goto_prev()<cr>", desc = "Next Diagnostic" },
+    { "<leader>cp", "<esc><cmd>lua vim.diagnostic.goto_next()<cr>", desc = "Previous Diagnostic" },
   },
 }
