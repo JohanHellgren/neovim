@@ -1,6 +1,7 @@
 {
     "diagnostics.globals": [
         "vim",
-        "default_integrations"
+        "default_integrations",
+        "dapui"
     ]
 }

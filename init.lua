@@ -51,3 +51,4 @@ require("lspconfig").rust_analyzer.setup({})
 require("lspconfig").tsserver.setup({})
 require'lspconfig'.sourcekit.setup{}
 require'lspconfig'.tailwindcss.setup{}
+require'lspconfig'.volar.setup{}
