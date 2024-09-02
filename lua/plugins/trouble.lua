@@ -5,36 +5,36 @@ return {
   keys = {
     { "<leader>x",  group = "Trouble" },
     {
-      "<leader>xx",
+      "<leader>dx",
       "<cmd>Trouble diagnostics toggle<cr>",
       desc = "Diagnostics (Trouble)",
     },
     {
-      "<leader>xX",
+      "<leader>dX",
       "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
       desc = "Buffer Diagnostics (Trouble)",
     },
     {
-      "<leader>cs",
+      "<leader>ds",
       "<cmd>Trouble symbols toggle focus=false<cr>",
       desc = "Symbols (Trouble)",
     },
     {
-      "<leader>cl",
+      "<leader>dl",
       "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
       desc = "LSP Definitions / references / ... (Trouble)",
     },
     {
-      "<leader>xL",
+      "<leader>dL",
       "<cmd>Trouble loclist toggle<cr>",
       desc = "Location List (Trouble)",
     },
     {
-      "<leader>xQ",
+      "<leader>dQ",
       "<cmd>Trouble qflist toggle<cr>",
       desc = "Quickfix List (Trouble)",
     },
-    { "<leader>cn", "<esc><cmd>lua vim.diagnostic.goto_prev()<cr>", desc = "Next Diagnostic" },
-    { "<leader>cp", "<esc><cmd>lua vim.diagnostic.goto_next()<cr>", desc = "Previous Diagnostic" },
+    { "<leader>dn", "<esc><cmd>lua vim.diagnostic.goto_prev()<cr>", desc = "Next Diagnostic" },
+    { "<leader>dp", "<esc><cmd>lua vim.diagnostic.goto_next()<cr>", desc = "Previous Diagnostic" },
   },
 }
